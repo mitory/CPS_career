@@ -1,0 +1,44 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.header {
+	min-height: 100vh;
+}
+
+.about-us__img {
+	width: 400px;
+	height: 350px;
+}
+
+.our_events__item {
+	width: 520px;
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantage-icon {
+  color: #2F55B8;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.navbar__link:after {
+	display: block;
+	content: ""; 
+	height: 3px;
+	width: 0%;
+	background-color: #225384;
+	transition: width 0.4s ease-in-out; 
+}
+.navbar__link:hover:after,
+.navbar__link:focus:after {
+	width: 100%;
+}
+.navbar__link:hover{
+	color:#225384;
+} 
