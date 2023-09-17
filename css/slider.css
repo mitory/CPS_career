@@ -1,9 +1,51 @@
 .slick-list {
 	overflow: hidden;
 }
+
 .slick-track{
 	display: flex;
 	padding: 0 50px;
+}
+
+.specials__items .slick-track{
+	display: flex;
+	padding: 0 40%;
+}
+
+@media (max-width: 1200px) { 
+	.specials__items .slick-track{
+		padding: 0 37%;
+	}
+}
+
+@media (max-width: 992px) { 
+	.specials__items .slick-track{
+		padding: 0 9%;
+	}
+}
+
+@media (max-width: 767px) { 
+	.specials__items .slick-track{
+		padding: 0 25%;
+	}
+}
+
+@media (max-width: 500px) { 
+	.specials__items .slick-track{
+		padding: 0 20%;
+	}
+}
+
+@media (max-width: 420px) { 
+	.specials__items .slick-track{
+		padding: 0 15%;
+	}
+}
+
+@media (max-width: 360px) { 
+	.specials__items .slick-track{
+		padding: 0 13%;
+	}
 }
 
 .specials__items {

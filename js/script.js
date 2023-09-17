@@ -74,3 +74,28 @@ function set_vacancy(){
 isVacancy = true
 }
 }
+
+document.querySelector(".buttonclick").addEventListener("click", 
+function(e){
+
+	const name = document.getElementById('name').value;
+	const email = document.getElementById('emailMethodInput').value;
+	const tel = document.getElementById('telMethodInput').value;
+	const text = document.getElementById('aboutPerson').value;
+
+	alert(name)
+
+	e.preventDefault();
+})
+
+
+function changeMethod() {
+	if(document.getElementById('emailMethod').checked) {
+		document.getElementById('emailMethodInputBlock').classList.remove('d-none');
+		document.getElementById('telMethodInputBlock').classList.add('d-none');
+	}else if(document.getElementById('phoneMethod').checked) {
+		document.getElementById('emailMethodInputBlock').classList.add('d-none');
+		document.getElementById('telMethodInputBlock').classList.remove('d-none');
+	}
+}
+
